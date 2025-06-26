@@ -8,36 +8,172 @@
 </head>
 <body>
 
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0"></script>
+
+  <!-- HEADER + NAV -->
   <header class="top-header">
-    <div class="logo-container">
-      <img src="images/setthi-logo.png" alt="Setthi Asset" class="logo-img">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <img src="images/setthi-logo.png" alt="Setthi Asset" class="logo-img" />
+      </div>
+
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+
+      <nav class="main-navbar">
+        <ul class="nav-menu">
+          <li><a href="#">รู้จักเรา</a></li>
+          <li><a href="#">โครงการ</a></li>
+          <li><a href="#">บริการ</a></li>
+          <li><a href="#">รีวิว</a></li>
+          <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">รู้จักเรา</a></li>
-        <li><a href="#">โครงการ</a></li>
-        <li><a href="#">บริการ</a></li>
-        <li><a href="#">รีวิว</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <!-- MAIN -->
   <main>
+    <!-- CAROUSEL -->
+    <section class="carousel-wrapper">
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <div class="carousel-image">
+            <img src="images/model1.jpg" alt="บ้านชั้นเดียว" />
+          </div>
+          <div class="carousel-text">
+            <h2>ซื้อบ้าน…<br><span>ต้องเศรษฐี</span></h2>
+            <p>โปรโมชั่นพิเศษ เริ่ม 2.xx ล้าน<br>บ้านชั้นเดียว พร้อมยื่นกู้ฟรี!</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="carousel-image">
+            <img src="images/2floor.jpg" alt="บ้าน 2 ชั้น" />
+          </div>
+          <div class="carousel-text">
+            <h2>โครงการใหม่!<br><span>ใจกลางเมือง</span></h2>
+            <p>บ้านทันสมัย พร้อมเข้าอยู่</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="carousel-image">
+            <img src="images/1floor.jpg" alt="โปรโมชั่นแรง" />
+          </div>
+          <div class="carousel-text">
+            <h2>โปรแรงที่สุด<br><span>ฟรีทุกค่าใช้จ่าย</span></h2>
+            <p>จองวันนี้ รับของแถมสูงสุด 200,000฿</p>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+        <div class="carousel-dots"></div>
+      </div>
+    </section>
+
+    <!-- TEXT SECTION -->
     <section>
-      <h2>"เราไม่ยัดขาย — เราช่วยเลือกบ้านน่าอยู่ ให้คุณอยู่สบายในราชบุรี”</h2>
-      <p>เป็นที่ปรึกษา ที่ไว้วาง ไม่ยัดขาย แต่แนะนำแนะช่วยคุณเลือกเบื้อบ้านในฝันราชบุรี</p>
+      <h2 style="text-align:center; margin-top: 2em;">“เราไม่ยัดขาย — เราช่วยเลือกบ้านน่าอยู่ ให้คุณอยู่สบายในราชบุรี”</h2>
+      <p style="text-align:center;">เป็นที่ปรึกษา ที่ไว้วางใจ ไม่ยัดขาย แต่แนะนำและช่วยคุณเลือกบ้านในฝันที่ราชบุรี</p>
 
-      <!-- 📸 Image goes here -->
-      <img src="images/home.jpg" alt="โปรโมชั่นหน้าฝน บ้านเดี่ยว" class="main-image">
-      <p style="text-align:center; font-size: 1em; margin-top: -10px;">
-      📍 โปรโมชั่นพิเศษ: จองวันนี้เพียง 999 บาท พร้อมยื่นกู้ฟรี!
+      <p style="text-align:center; font-size: 1em; margin-top: 30px;">
+        📍 โปรโมชั่นพิเศษ: จองวันนี้เพียง 999 บาท พร้อมยื่นกู้ฟรี!
       </p>
-      <a href="tel:0998956524" class="cta-button">📞 โทรเลย! 099-895-6524</a>
-      <a href="tel:0998956524" class="cta-button">📞 โทรเลย! 091-089-0089</a>
 
+      <!-- CTA BUTTONS -->
+      <p style="text-align: center; font-size: 1.2em; margin-top: 1em;">
+        <a href="tel:0998956524" class="cta-button">📞 โทรเลย! 099-895-6524</a>
+        <a href="tel:0910890089" class="cta-button">📞 โทรเลย! 091-089-0089</a>
+      </p>
+
+      <!-- VIDEOS -->
+      <h2 style="text-align: center; margin-top: 1.5em;">🎥 พาไปชมบ้านจริง 2 ชั้น</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fd638N--8fI?si=so9RB5QEvedWbnLN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+
+      <h2 style="text-align: center; margin-top: 1.5em;">🎥 พาไปชมบ้านจริง ชั้นเดียว</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NRyIQxMpAyU?si=RUBd8XdAGallsdkU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; โครงการบ้านเศรษฐี ติดต่อ 099-895-6524(คุณเจมส์), 091-089-0089(คุณพรเพ็ญ) </p>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div style="display: inline-flex; gap: 20px; align-items: center;">
+      <a href="https://www.facebook.com/richtownrichhappiness/" target="_blank" rel="noopener">
+        <img src="images/facebook.png" alt="Facebook" style="width: 36px; height: 36px; object-fit: contain;" />
+      </a>
+      <a href="https://youtube.com/@setthiasset?si=xXxmi7hStrkhYWfZ" target="_blank" rel="noopener">
+        <img src="images/youtube.webp" alt="YouTube" style="width: 36px; height: 36px; object-fit: contain;" />
+      </a>
+      <a href="https://lin.ee/f60DACg" target="_blank" rel="noopener">
+        <img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0" />
+      </a>
+    </div>
+
+    <p>
+      &copy; โครงการบ้านเศรษฐี ติดต่อ 
+      <a href="tel:0998956524">099-895-6524 (คุณเจมส์)</a>, 
+      <a href="tel:0910890089">091-089-0089 (คุณพรเพ็ญ)</a>
+    </p>
   </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dotsContainer.children[i].classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Create dots dynamically
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        currentIndex = i;
+        showSlide(currentIndex);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Auto-play every 5 seconds
+    setInterval(nextSlide, 5000);
+  </script>
 </body>
 </html>
