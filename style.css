@@ -15,6 +15,22 @@
   aspect-ratio: 16 / 6; /* automatically keeps shape on all screens */
   display: block;
 }
+.hero-text {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
 
 .cta-button {
   display: block;
