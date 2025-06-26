@@ -7,6 +7,22 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
+.cta-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #264D3B;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #1b3a2b;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
