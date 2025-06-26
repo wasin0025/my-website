@@ -8,18 +8,25 @@
 }
 
 .hero-banner {
-  background-image: url("banner.png"); /* replace with actual file name */
+  position: relative;
+  background-image: url("banner.png"); /* replace with your actual file name */
   background-size: cover;
   background-position: center;
   width: 100%;
-  aspect-ratio: 16 / 6; /* automatically keeps shape on all screens */
-  display: block;
+  aspect-ratio: 16 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .hero-text {
-  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding-top: 100px;
-  font-family: sans-serif;
+  color: white;
+  font-family: 'Arial', sans-serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -30,6 +37,7 @@
 
 .hero-text p {
   font-size: 1.2em;
+  margin: 0;
 }
 
 .cta-button {
