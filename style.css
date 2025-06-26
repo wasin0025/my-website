@@ -1,22 +1,17 @@
-.main-image {
-  width: 100%;
-  max-width: 720px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .hero-banner {
   position: relative;
-  background-image: url("banner.png"); /* replace with your actual file name */
+  background-image: url("banner.png"); /* Change if your file name is different */
   background-size: cover;
   background-position: center;
   width: 100%;
   aspect-ratio: 16 / 6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-text {
@@ -26,62 +21,38 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  font-family: 'Arial', sans-serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 .hero-text h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.3em;
+  font-size: 2.2em;
+  margin: 0 0 0.4em;
 }
 
 .hero-text p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0;
-}
-
-.cta-button {
-  display: block;
-  width: fit-content;
-  margin: 20px auto;
-  padding: 12px 24px;
-  background-color: #264D3B;
-  color: white;
-  font-size: 1.2em;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-.cta-button:hover {
-  background-color: #1b3a2b;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
 }
 
 header {
   background-color: #264D3B;
   color: white;
-  padding: 1em;
   text-align: center;
+  padding: 1em 0;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-  padding: 2em;
   max-width: 800px;
-  margin: auto;
-  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -90,5 +61,5 @@ footer {
   background-color: #eee;
   text-align: center;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 40px;
 }
