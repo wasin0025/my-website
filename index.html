@@ -22,11 +22,10 @@
 
       <nav class="main-navbar">
         <ul class="nav-menu">
-          <li><a href="#">รู้จักเรา</a></li>
-          <li><a href="#">โครงการ</a></li>
-          <li><a href="#">บริการ</a></li>
-          <li><a href="#">รีวิว</a></li>
-          <li><a href="#">ติดต่อเรา</a></li>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="pages/about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="pages/projects.html">โครงการ</a></li>
+          <li><a href="pages/contact.html">ติดต่อเรา</a></li>
         </ul>
       </nav>
     </div>
@@ -174,6 +173,18 @@
 
     // Auto-play every 5 seconds
     setInterval(nextSlide, 5000);
+
+    const toggleMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    toggleMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+      // Add fade-in class after DOM is loaded
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('fade-in');
+    });
   </script>
 </body>
 </html>

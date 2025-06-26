@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>โครงการของเรา - Setthi Asset</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <a href="../index.html"><img src="../images/setthi-logo.png" alt="Setthi Asset" class="logo-img" /></a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <nav class="main-navbar">
+        <ul class="nav-menu">
+          <li><a href="../index.html">หน้าแรก</a></li>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="projects.html" class="active">โครงการ</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding: 2rem; text-align: center;">
+      <h1>โครงการของเรา</h1>
+      <p>เรามีหลายโครงการที่ตอบโจทย์ไลฟ์สไตล์ทั้งบ้านเดี่ยวชั้นเดียว บ้านสองชั้น และบ้านสำหรับครอบครัว</p>
+      <div style="margin-top: 2rem;">
+        <img src="../images/1floor.jpg" alt="บ้านชั้นเดียว" style="width: 90%; max-width: 500px; margin-bottom: 1rem; margin-top: 1rem;" />
+        <h3>บ้านชั้นเดียวเริ่ม 2.xx ล้าน</h3>
+        <p>จองเพียง 999.- พร้อมของแถมมากมาย</p>
+
+        <img src="../images/2floor.jpg" alt="บ้านสองชั้น" style="width: 90%; max-width: 500px; margin-bottom: 1rem; margin-top: 1rem;" />
+        <h3>บ้านชั้นเดียวเริ่ม 4.xx ล้าน</h3>
+
+      </div>
+      <div style="margin-top: 2rem;">
+        <h3>แผนที่โครงการ</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.968687336673!2d99.78039523854517!3d13.537512357828893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e325c43648c37d%3A0xceab48db3ef3a082!2z4Lia4LmJ4Liy4LiZ4LmA4Lio4Lij4Lip4LiQ4Li1IOC5gOC4guC4suC5geC4geC5iOC4meC4iOC4seC4meC4l-C4meC5jA!5e0!3m2!1sth!2sth!4v1750946073384!5m2!1sth!2sth"
+          width="100%"
+          height="400"
+          style="border:0; border-radius: 10px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div style="display: inline-flex; gap: 20px; align-items: center;">
+      <a href="https://www.facebook.com/richtownrichhappiness/" target="_blank"><img src="../images/facebook.png" alt="Facebook" style="width: 36px;" /></a>
+      <a href="https://youtube.com/@setthiasset" target="_blank"><img src="../images/youtube.webp" alt="YouTube" style="width: 36px;" /></a>
+      <a href="https://lin.ee/f60DACg" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" height="36" /></a>
+    </div>
+    <p>&copy; Setthi Asset — <a href="tel:0998956524">099-895-6524</a>, <a href="tel:0910890089">091-089-0089</a></p>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('fade-in');
+    });
+
+    const toggleMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    toggleMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ติดต่อเรา - Setthi Asset</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <a href="../index.html"><img src="../images/setthi-logo.png" alt="Setthi Asset" class="logo-img" /></a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <nav class="main-navbar">
+        <ul class="nav-menu">
+          <li><a href="../index.html">หน้าแรก</a></li>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="projects.html">โครงการ</a></li>
+          <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding: 2rem; text-align: center;">
+      <h1>ติดต่อเรา</h1>
+      <p style="margin: 1rem 0;">หากคุณสนใจบ้านในราชบุรีหรือต้องการสอบถามข้อมูลเพิ่มเติม ติดต่อเราได้เลย!</p>
+      <p>📞 <strong>099-895-6524 (คุณเจมส์)</strong></p>
+      <p>📞 <strong>091-089-0089 (คุณพรเพ็ญ)</strong></p>
+      <p>📍 ราชบุรี ประเทศไทย</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div style="display: inline-flex; gap: 20px; align-items: center;">
+      <a href="https://www.facebook.com/richtownrichhappiness/" target="_blank"><img src="../images/facebook.png" alt="Facebook" style="width: 36px;" /></a>
+      <a href="https://youtube.com/@setthiasset" target="_blank"><img src="../images/youtube.webp" alt="YouTube" style="width: 36px;" /></a>
+      <a href="https://lin.ee/f60DACg" target="_blank"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" height="36" /></a>
+    </div>
+    <p>&copy; Setthi Asset — <a href="tel:0998956524">099-895-6524</a>, <a href="tel:0910890089">091-089-0089</a></p>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('fade-in');
+    });
+
+    const toggleMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    toggleMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -11,6 +11,15 @@ body {
   color: #333;
 }
 
+body {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
 /* HEADER + NAVIGATION */
 .top-header {
   background-color: white;
@@ -80,6 +89,11 @@ body {
   overflow: hidden;
 }
 
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
 .carousel-slide {
   display: flex;
   width: 100%;
@@ -104,6 +118,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .carousel-text {
@@ -258,5 +273,113 @@ footer {
 
   .carousel-text {
     padding: 40px 20px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nav-menu li {
+  margin: 15px 0;
+}
+
+/* Desktop navigation menu font size */
+.nav-menu li a {
+  font-size: 1.2rem; /* Try 1.2rem to 1.5rem depending on your preference */
+  font-weight: 500;
+}
+
+/* Mobile navigation menu font size */
+@media (max-width: 768px) {
+  .nav-menu li a {
+    font-size: 1.4rem; /* Slightly larger for better tap accessibility */
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 80px; /* below header */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  
+}
+
+/* Hide menu by default on small screens */
+/* --- Base nav-menu style --- */
+.nav-menu {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Mobile Styles --- */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    max-height: 500px; /* adjust this value if needed */
+    opacity: 1;
+  }
+
+  .nav-menu li {
+    margin: 12px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+  }
+}
+
+/* --- Desktop Only --- */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
   }
 }

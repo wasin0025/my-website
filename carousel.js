@@ -39,3 +39,10 @@ prevBtn.addEventListener('click', prevSlide);
 
 // Auto-play every 5 seconds
 setInterval(nextSlide, 5000);
+
+const toggleMenu = document.getElementById('mobile-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+toggleMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
